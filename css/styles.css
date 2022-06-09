@@ -12,7 +12,7 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     background-color: hsl(225, 100%, 94%);
-    margin: 0;
+    margin: 0 auto;
     padding: 50px;
 }
 .main{
@@ -24,8 +24,6 @@ body{
     width:410px
 }
 .card{
-    display: flex;
-    flex-direction: column;
     width: 380px;
     background-color: #fff;
     border-radius: 20px;
@@ -120,4 +118,29 @@ body{
 }
 .button button:hover{
     opacity: 0.5;
+}
+/* //////////////////////////responsive\\\\\\\\\\\\\\\\\\\\\ */
+@media only screen and (max-width: 600px){
+    body{
+        background-image: url("../images/pattern-background-mobile.svg");
+    }
+    .card{
+        width: 300px;
+       display: block;
+    }
+    .plan{
+        flex: none;
+    }
+    .img img{
+        width:300px;
+    }
+    .summary{
+        padding: 0;
+    }
+    .price{
+        font-size: 12px;
+    }
+    .link a{
+        font-size: 10px;
+    }
 }
