@@ -82,6 +82,8 @@ body{
 .plan .link{
     margin-top:12px;
     font-weight: 600;
+    font-size:14px;
+    color:var(--bright-blue);
 }
 .button button{
     width: 100%;
@@ -104,4 +106,18 @@ body{
     text-decoration: none;
     color:var(--desat-blue);
     font-weight: 800;
+}
+.button button, .link, .button p a:hover{
+    cursor: pointer;
+}
+.link a:hover{
+    text-decoration: none;
+    color: var(--desat-blue);
+
+}
+.button p a:hover{
+    color:var(--dark-blue);
+}
+.button button:hover{
+    opacity: 0.5;
 }
