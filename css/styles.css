@@ -1,3 +1,10 @@
+:root{
+    --dark-blue:#1f2f56;
+    --desat-blue:#7280a7;
+    --pale-blue:#e0e8ff;
+    --bright-blue:#3829e0;
+    --vp-blue:#f5f7ff;
+}
 body{
     font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
@@ -24,6 +31,9 @@ body{
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 20px;
+    -webkit-box-shadow: 8px 13px 33px 3px rgba(0,0,0,0.37);
+    -moz-box-shadow: 8px 13px 33px 3px rgba(0,0,0,0.37);
+    box-shadow: 8px 13px 33px 3px rgba(0,0,0,0.37);
 }
 .order{
     padding: 40px;
@@ -33,16 +43,18 @@ body{
     font-size:1.5rem ;
     font-weight: 800;
     margin: 0;
+    color:var(--dark-blue);
 }
 .summary{
     text-align: center;
     padding: 0 20px;
     font-size: 14px;
     margin-bottom: 20px;
+    color:var(--desat-blue);
 }
 .plan{
     display: flex;
-    background-color: hsl(225, 100%, 98%);
+    background-color: #f5f7ff;
     padding: 15px;
     font-size: 15px;
     border-radius: 10px;
@@ -54,6 +66,12 @@ body{
 .price{
     flex: 1.5;
     margin-left:10px;
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+.price span {
+    color: var(--desat-blue);
+    font-weight: 500;
 }
 .plan p{
     margin-top: 5px;
@@ -61,8 +79,9 @@ body{
     margin-right: 0;
     margin-bottom: 0;
 }
-.plan p a{
-    margin-top: 5px;
+.plan .link{
+    margin-top:12px;
+    font-weight: 600;
 }
 .button button{
     width: 100%;
@@ -70,14 +89,19 @@ body{
     border-radius: 10px;
     padding:15px;
     margin-bottom: 10px;
-    -webkit-box-shadow: 15px 38px 103px -22px rgba(0,0,0,0.37);
-    -moz-box-shadow: 15px 38px 103px -22px rgba(0,0,0,0.37);
-    box-shadow: 15px 38px 103px -22px rgba(0,0,0,0.37);
+    background-color: var(--bright-blue);
+    color: #fff;
+    font-weight: 600;
+    -webkit-box-shadow: 8px 13px 33px 7px rgba(0,0,0,0.37);
+    -moz-box-shadow: 8px 13px 33px 7px rgba(0,0,0,0.37);
+    box-shadow: 8px 13px 33px 7px rgba(0,0,0,0.37);
 }
 .button p{
     text-align: center;
-    font-size: 12px;
+    font-size: 13px;
 }
 .button p a{
     text-decoration: none;
+    color:var(--desat-blue);
+    font-weight: 800;
 }
